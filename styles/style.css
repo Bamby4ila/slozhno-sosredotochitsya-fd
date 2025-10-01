@@ -1,8 +1,7 @@
 .page {
   --transition-duration: 0.25s;
   color: var(--main-text-color);
-  background: var(--background-image) no-repeat top center,
-  var(--background-color);
+  background: var(--background-image) no-repeat top center, var(--background-color);
   background-size: auto 768px;
   background-attachment: fixed;
   transition-duration: var(--transition-duration);
