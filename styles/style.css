@@ -149,7 +149,7 @@
 
 .section__article-text-link {
   border: transparent;
-  text-shadow: 3px 3px 0px var(--link-shadow);
+  text-shadow: 2px 1px 0 var(--link-shadow);
   transition-duration: var(--transition-duration);
 }
 
@@ -387,9 +387,49 @@
   }
 }
 
-@media (width < 375px) {
+@media (max-width: 374px) {
+  .header {
+    padding: 0 15px;
+  }
+  
+  .header__title {
+    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  }
+
   .header__subtitle {
     width: 100%;
+  }
+  
+  .section {
+    padding: 0 15px;
+  }
+  
+  .section__article-text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+@media (width < 375px) {
+  .header {
+    padding: 0 15px;
+  }
+  
+  .header__title {
+    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  }
+
+  .header__subtitle {
+    width: 100%;
+  }
+  
+  .section {
+    padding: 0 15px;
+  }
+  
+  .section__article-text {
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 
