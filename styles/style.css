@@ -326,7 +326,6 @@
   
   .main {
     gap: 50px;
-    margin: 32px 0;
     padding: 0 10px;
   }
   
@@ -387,26 +386,9 @@
   }
 }
 
-@media (max-width: 375px) {
-  .header {
-    padding: 0 15px;
-  }
-  
-  .header__title {
-    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
-  }
-
+@media (width < 375px) {
   .header__subtitle {
     width: 100%;
-  }
-  
-  .section {
-    padding: 0 15px;
-  }
-  
-  .section__article-text {
-    font-size: 16px;
-    line-height: 1.4;
   }
 }
 
