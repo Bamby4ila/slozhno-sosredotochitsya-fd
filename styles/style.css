@@ -243,7 +243,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .header__theme-menu {
     padding-top: 190px;
   }
@@ -291,7 +291,7 @@
   }
 }
 
-@media (width < 768px) {
+@media (width: 768px) {
   .header {
     padding: 0 10px;
   }
