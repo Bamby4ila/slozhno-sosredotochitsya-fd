@@ -326,7 +326,6 @@
   
   .main {
     gap: 50px;
-    margin: 32px 0;
     padding: 0 10px;
   }
   
@@ -387,7 +386,11 @@
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 375px) {
+=======
+@media (width < 375px) {
+>>>>>>> 214fb0bdbaf3ba3a812d9d0191d3a6ad4937b4e5
   .header__subtitle {
     width: 100%;
   }
