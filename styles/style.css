@@ -7,7 +7,6 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  
   transition-duration: var(--transition-duration);
 }
 
@@ -386,6 +385,12 @@
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     text-shadow: 2px 2px 0px var(--title-decor);
+  }
+}
+
+@media (width < 375px) {
+  .header__subtitle {
+    width: 100%;
   }
 }
 
