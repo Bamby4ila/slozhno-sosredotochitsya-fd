@@ -387,7 +387,11 @@
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 374px) {
+=======
+@media (width < 375px) {
+>>>>>>> e942ad979f436375faf6f51e087b1ca9f4f0f656
   .header {
     padding: 0 15px;
   }
@@ -408,6 +412,7 @@
     font-size: 16px;
     line-height: 1.4;
   }
+<<<<<<< HEAD
 }
 
 @media (width < 375px) {
@@ -431,6 +436,8 @@
     font-size: 16px;
     line-height: 1.4;
   }
+=======
+>>>>>>> e942ad979f436375faf6f51e087b1ca9f4f0f656
 }
 
 @media (width < 425px) {
