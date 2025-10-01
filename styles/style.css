@@ -2,7 +2,7 @@
   --transition-duration: 0.25s;
   color: var(--main-text-color);
   background: var(--background-image) no-repeat top center,
-    var(--background-color);
+  var(--background-color);
   background-size: auto 768px;
   background-attachment: fixed;
   transition-duration: var(--transition-duration);
@@ -10,8 +10,8 @@
 
 .header {
   position: relative;
-  padding: 0 20px;
   max-height: 100vh;
+  padding: 0 20px;
 }
 
 .header__rec {
@@ -324,7 +324,7 @@
   
   .main {
     gap: 50px;
-    margin: 34px 0;
+    margin: 32px 0;
     padding: 0 10px;
   }
   
@@ -342,7 +342,7 @@
   .section:first-of-type .section__title,
   .section:nth-of-type(3) .section__title {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   
   .section:first-of-type .section__article-list,
