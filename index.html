@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/dark.css" />
-    <link rel="stylesheet" href="./styles/light.css" />
     <title>Сложно сосредоточиться</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/mobile-icon.png" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dark.css" />
+    <link rel="stylesheet" href="styles/light.css" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -24,7 +25,6 @@
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_light"
-              aria-pressed="false"
               >
             день
             </button>
@@ -32,7 +32,7 @@
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              aria-pressed="true"
+              disabled
               >
             авто
             </button>
@@ -40,7 +40,6 @@
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
-              aria-pressed="false"
               >
             неон
             </button>
@@ -139,9 +138,9 @@
           секунд)
         </h2>
         <div class="section__article-list">
-          <h3 class="section__article-list-title title-decor">
+          <h2 class="section__article-list-title title-decor">
             5 простых (на самом деле не очень) советов
-          </h3>
+          </h2>
           <article class="section__article-item">
             <h3
               class="section__article-title section__article-title_regular title-decor"
@@ -166,10 +165,10 @@
               Включите музыку
             </h3>
             <p class="section__article-text">
-              Но не любую, и не любимую. Любимая может быть связана с сильными 
-              положительными эмоциями, которые тоже очень сильно отвлекают. Подойдёт 
-              тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить 
-              плейлист c «белым шумом» или нейромузыкой.
+              Но не любую, и не любимую. Любимая может быть связана с сильными
+              положительными эмоциями, которые тоже очень сильно отвлекают.
+              Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
+              попробовать включить плейлист в «белым шумом» или нейромузыкой.
             </p>
           </article>
           <article class="section__article-item">
@@ -199,10 +198,10 @@
               Хорошо ешьте
             </h3>
             <p class="section__article-text">
-              Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые 
-              препятствуют резким скачкам сахара в крови. Например, с высоким содержанием 
-              клетчатки: овощи, ягоды, бобовые (нут, чечевица, фасоль), коричневый рис, хлеб 
-              из цельнозерновой пшеницы.
+              Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
+              которые препятствуют резким скачкам сахара в крови. Например, с
+              высоким содержанием клетчатки: овощи, ягоды, бобовые (нут,
+              чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
             </p>
           </article>
           <article class="section__article-item">
@@ -221,35 +220,35 @@
         </div>
       </section>
       <section class="section">
-        <h3 class="section__title dark-title title-decor">
+        <h2 class="section__title dark-title title-decor">
           А можно в картинках?
-        </h3>
+        </h2>
         <img
-          src="./images/sunset.png"
+          src="images/sunset.png"
           alt="Закат"
           loading="lazy"
           class="section__image"
           />
         <img
-          src="./images/ice-cream.png"
+          src="images/ice-cream.png"
           alt="Мороженное"
           loading="lazy"
           class="section__image"
           />
         <img
-          src="./images/tape.png"
+          src="images/tape.png"
           alt="Кассета"
           loading="lazy"
           class="section__image"
           />
         <img
-          src="./images/books.png"
+          src="images/books.png"
           alt="Книги"
           loading="lazy"
           class="section__image"
           />
         <img
-          src="./images/street.png"
+          src="images/street.png"
           alt="Улица"
           loading="lazy"
           class="section__image"
@@ -259,6 +258,6 @@
     <footer class="footer decorated-zone">
       <h2 class="footer__title">focus</h2>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
