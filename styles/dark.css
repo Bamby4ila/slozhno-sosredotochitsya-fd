@@ -7,6 +7,7 @@
   --background-image: url(../images/cover-image-dark.png);
   --article-title-color: var(--background-color);
   --section-title-color: var(--title-shadow);
+  --border-color: var(--main-text-color);
   --corners-color: var(--title-shadow);
   --title-decor: var(--title-shadow);
   --link-shadow: var(--title-shadow);
