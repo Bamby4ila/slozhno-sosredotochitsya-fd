@@ -1,1 +1,1 @@
-https://github.com/Bamby4ila/slozhno-sosredotochitsya-fd
+https://github.com/Bamby4ila/Bamby4ila-slozhno-sosredotochitsya-fd
