@@ -1,5 +1,3 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
@@ -11,10 +9,13 @@ html {
 }
 
 body {
-  min-inline-size: 375px;
-  /* max-inline-size: 1440px; */
-  max-inline-size: 1024px;
   margin: 0 auto;
+  font-family: 'IBM Plex mono';
+  font-weight: 400;
+  font-size: 18px;
+  min-inline-size: 375px;
+  max-inline-size: 1024px;
+  block-size: 100%;
 }
 
 h1,
@@ -25,11 +26,11 @@ h5,
 h6,
 p {
   margin: 0;
-  font-size: 1em;
 }
 
 ul {
   margin: 0;
+
   padding: 0;
   list-style: none;
 }
@@ -45,5 +46,150 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--corners-color);
+  border-left: 1px solid var(--corners-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--corners-color);
+  border-right: 1px solid var(--corners-color);
+}
+
+@media (min-width: 1024px) {
+  .header.decorated-zone::before {
+    content: "";
+    bottom: -80px;
+    left: 20px;
+    border-bottom: 1px solid var(--corners-color);
+    border-left: 1px solid var(--corners-color);
+    font-size: 30px;
+  }
+  .header.decorated-zone::after {
+    content: "";
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid var(--corners-color);
+    border-right: 1px solid var(--corners-color);
+    font-size: 30px;
+  }
+
+  .footer.decorated-zone::before {
+    content: "";
+    bottom: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid var(--corners-color);
+    border-left: 1px solid var(--corners-color);
+  }
+  .footer.decorated-zone::after {
+    content: "";
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid var(--corners-color);
+    border-right: 1px solid var(--corners-color);
+  }
+}
+
+@media (min-width: 678px) and (max-width: 1023px) {
+  .header.decorated-zone::before {
+    content: "";
+    bottom: -336px;
+    left: 20px;
+    border-bottom: 1px solid var(--corners-color);
+    border-left: 1px solid var(--corners-color);
+    font-size: 25px;
+  }
+  .header.decorated-zone::after {
+    content: "";
+    top: 20px;
+    right: 20px;
+    border-top: 2px solid var(--corners-color);
+    border-right: 2px solid var(--corners-color);
+    font-size: 25px;
+  }
+
+  .footer.decorated-zone::before {
+    content: "";
+    bottom: 35px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid var(--corners-color);
+    border-left: 1px solid var(--corners-color);
+  }
+  .footer.decorated-zone::after {
+    content: "";
+    top: 77px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid var(--corners-color);
+    border-right: 1px solid var(--corners-color);
+  }
+}
+
+@media (min-width: 375px) and (max-width: 677px) {
+  .header.decorated-zone::before {
+    content: "";
+    bottom: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid var(--corners-color);
+    border-left: 1px solid var(--corners-color);
+  }
+  .header.decorated-zone::after {
+    content: "";
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid var(--corners-color);
+    border-right: 1px solid var(--corners-color);
+  }
+
+  .footer.decorated-zone::before {
+    content: "";
+    bottom: 8px;
+    left: 8px;
+    border-bottom: 1px solid var(--corners-color);
+    border-left: 1px solid var(--corners-color);
+    font-size: 15px;
+  }
+  .footer.decorated-zone::after {
+    content: "";
+    top: 12px;
+    right: 10px;
+    border-top: 1px solid var(--corners-color);
+    border-right: 1px solid var(--corners-color);
+    font-size: 15px;
+  }
+}
+
+.title-decor {
+  background: var(--title-decor);
 }
