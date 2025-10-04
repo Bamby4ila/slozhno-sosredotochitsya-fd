@@ -117,7 +117,7 @@ a {
 @media (min-width: 678px) and (max-width: 1023px) {
   .header.decorated-zone::before {
     content: "";
-    bottom: -336px;
+    bottom: 20px;
     left: 20px;
     border-bottom: 1px solid var(--corners-color);
     border-left: 1px solid var(--corners-color);
