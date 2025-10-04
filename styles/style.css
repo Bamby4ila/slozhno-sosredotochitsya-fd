@@ -29,11 +29,13 @@ html, body {
 
 .header {
   height: 100vh;
-  max-height: 668px;
+  min-height: 668px;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .header {
     padding: 0 10px;
   }
@@ -47,7 +49,7 @@ html, body {
   text-transform: uppercase;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .header__rec {
     top: 11px;
     right: 39px;
@@ -84,7 +86,7 @@ html, body {
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .header__theme-menu-list {
     gap: 11px;
   }
@@ -124,7 +126,7 @@ html, body {
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .header__theme-menu {
     padding-top: 75px;
   }
@@ -139,27 +141,29 @@ html, body {
 }
 
 .header__title-container {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 76px;
-  padding: 238px 0 136px;
+  padding: 236px 0 136px;
 }
 
 @media (width < 1024px) and (width >= 768px) {
   .header__title-container {
     gap: 133px;
-    padding: 150px 0 183px;
+    padding: 144px 0 183px;
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .header__title-container {
     gap: 57px;
-    padding: 70px 0 74px;
+    padding: 72px 0 74px;
   }
 }
 
-@media (width < 1024px) and (width >= 375px) {
+@media (width < 1024px) {
   .header__title {
     text-shadow: 4px 4px 0px var(--title-decor);
   }
@@ -171,7 +175,7 @@ html, body {
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .header__title {
     margin-left: 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -195,19 +199,12 @@ html, body {
 .main {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
   gap: 80px;
-  margin: 160px 0 60px 0;
+  margin: 60px 0;
   padding: 0 20px;
 }
 
-@media (width >= 768px) and (width < 1024px) {
-  .main {
-    margin: 416px 0 0;
-  }
-}
-
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .main {
     gap: 50px;
     margin: 40px 0;
@@ -217,7 +214,6 @@ html, body {
 
 .section {
   line-height: 130%;
-  
 }
 
 .section__title {
@@ -237,7 +233,7 @@ html, body {
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .section__title {
     width: 100%;
     margin-bottom: 20px;
@@ -309,7 +305,7 @@ html, body {
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .section:first-of-type .section__title,
   .section:nth-of-type(3) .section__title {
     width: 100%;
@@ -332,7 +328,7 @@ html, body {
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .section:first-of-type .section__article-list,
   .section:nth-of-type(3) .section__article-list {
     width: 100%;
@@ -343,7 +339,7 @@ html, body {
   width: 30%;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .section:nth-of-type(2) .section__title {
     width: 100%;
   }
@@ -355,7 +351,7 @@ html, body {
   }
 }
 
-@media (width < 1024px) and (width >= 375px) {
+@media (width < 1024px) {
   .section:nth-of-type(2) .section__article-list {
     gap: 20px;
   }
@@ -366,7 +362,7 @@ html, body {
   width: 32%;
 }
 
-@media (width < 1024px) and (width >= 375px) {
+@media (width < 1024px) {
   .section:nth-of-type(2) .section__article-item {
     flex: 1 0 auto;
     width: 100%;
@@ -387,9 +383,7 @@ html, body {
   .section:last-of-type .section__image {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center;
     object-position: center;
   }
 
@@ -409,10 +403,6 @@ html, body {
     width: 100%;
     height: auto;
   }
-
-  .section:last-of-type .section__image-container {
-    width: 100px;
-  }
 }
 
 @media (width >= 768px) {
@@ -431,77 +421,37 @@ html, body {
 }
 
 .footer {
+  height: 100vh;
+  min-height: 668px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  max-height: 768px;
-  margin-top: auto;
+  padding: 0 20px;
   text-align: center;
-  padding: 0;
 }
 
-@media (width >= 769px) and (width < 1024px) {
+@media (width < 768px) {
   .footer {
-    padding: 492px 20px;
-  }
-}
-
-@media (width <= 768px) {
-  .footer {
-    display: block;
-    height: 100vh;
-    max-height: none;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    min-height: 768px;
-    margin-top: auto;
-    text-align: center;
-    padding: 0;
-  }
-}
-
-@media (width <= 375px) {
-  .footer {
-    max-height: 668px;
-    height: 100vh;
-    margin-top: auto;
-    text-align: center;
+    padding: 0 10px;
   }
 }
 
 .footer__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 2px 2px 0px var(--footer-title-shadow);
+  line-height: 1;
 }
 
-@media (width < 1024px) and (width >= 375px) {
+@media (width < 1024px) {
   .footer__title {
     text-shadow: 2px 2px 0px var(--title-decor);
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) {
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-}
-
-@media (width < 1024px) and (width >= 768px) {
-  .footer {
-    padding: 492px 20px;
-  }
-}
-
-@media (width < 768px) and (width >= 375px) {
-  .footer {
-    margin-top: 40px;
-    padding: 262px 10px;
   }
 }
