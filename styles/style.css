@@ -34,8 +34,8 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   padding: 0 20px;
 }
 
@@ -137,7 +137,7 @@ html, body {
 }
 
 .header__title {
-  margin-left: -25%;
+  margin-left: -2%;
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -148,23 +148,21 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   gap: 76px;
-  margin-left: -2%;
-  padding: 237px 0 136px;
+  padding: 0 0 136px;
 }
 
 @media (width < 1024px) and (width >= 768px) {
   .header__title-container {
     gap: 133px;
-    padding: 146px 0 183px;
+    padding: 0 0 183px;
   }
 }
 
 @media (width < 768px) {
   .header__title-container {
-    gap: 55px;
+    gap: 57px;
     padding: 72px 0 74px;
   }
 }
@@ -177,13 +175,13 @@ html, body {
 
 @media (width < 1024px) and (width >= 768px) {
   .header__title {
-    margin-left: -24%;
+    margin-left: -3%;
   }
 }
 
 @media (width < 768px) {
   .header__title {
-    margin-left: 6px;
+    margin-left: 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 82.5%;
   }
@@ -191,14 +189,14 @@ html, body {
 
 .header__subtitle {
   align-self: flex-end;
-  width: 49%;
+  width: 50%;
   color: var(--article-title-color);
   font-weight: 700;
 }
 
 @media (width < 425px) {
   .header__subtitle {
-    width: 98%;
+    width: 100%;
   }
 }
 
@@ -316,7 +314,7 @@ html, body {
   .section:first-of-type .section__title,
   .section:nth-of-type(3) .section__title {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -432,8 +430,8 @@ html, body {
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   padding: 0 20px;
   text-align: center;
 }
