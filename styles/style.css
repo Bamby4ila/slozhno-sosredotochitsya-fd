@@ -148,15 +148,15 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 76px;
-  padding: 0 0 136px;
+  padding: 236px 0 136px;
 }
 
 @media (width < 1024px) and (width >= 768px) {
   .header__title-container {
     gap: 133px;
-    padding: 0 0 183px;
+    padding: 150px 0 183px;
   }
 }
 
