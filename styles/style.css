@@ -19,7 +19,7 @@ html, body {
   --transition-duration: 0.25s;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   color: var(--main-text-color);
   background-color: var(--background-color);
   background-image: var(--background-image);
@@ -31,11 +31,11 @@ html, body {
 }
 
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  height: 100vh;
-  min-height: 100vh;
+  min-height: 668px;
   padding: 0 20px;
 }
 
@@ -148,7 +148,6 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
   gap: 76px;
   padding: 236px 0 136px;
 }
@@ -430,15 +429,26 @@ html, body {
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 100vh;
+  min-height: 668px;
   padding: 0 20px;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    min-height: 1024px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    min-height: 768px;
+  }
+}
+
 @media (width < 768px) {
   .footer {
-    padding: 0 10px;
+    min-height: 668px;
   }
 }
 
