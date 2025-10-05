@@ -35,7 +35,7 @@ html, body {
   flex-direction: column;
   flex-shrink: 0;
   height: 100vh;
-  min-height: 668px;
+  min-height: 100vh;
   padding: 0 20px;
 }
 
@@ -431,25 +431,14 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  min-height: 668px;
+  min-height: 100vh;
   padding: 0 20px;
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .footer {
-    min-height: 1024px;
-  }
-}
-@media (min-width: 1024px) {
-  .footer {
-    min-height: 768px;
-  }
-}
-
 @media (width < 768px) {
   .footer {
-    min-height: 668px;
+    padding: 0 10px;
   }
 }
 
