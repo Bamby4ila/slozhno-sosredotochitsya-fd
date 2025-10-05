@@ -31,12 +31,14 @@ html, body {
 }
 
 .header {
-  position: relative;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  justify-content: space-between;
+  height: 100vh;
   min-height: 668px;
   padding: 0 20px;
+  position: relative;
 }
 
 @media (width < 768px) {
@@ -162,7 +164,7 @@ html, body {
 @media (width < 768px) {
   .header__title-container {
     gap: 57px;
-    padding: 72px 0 74px;
+    padding: 71px 0 74px;
   }
 }
 
@@ -211,7 +213,7 @@ html, body {
 @media (width < 768px) {
   .main {
     gap: 50px;
-    margin: 34px 0;
+    margin: 40px 0;
     padding: 0 10px;
   }
 }
@@ -426,30 +428,13 @@ html, body {
 
 .footer {
   display: flex;
-  flex-shrink: 0;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+  height: 100vh;
   min-height: 668px;
   padding: 0 20px;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    min-height: 1024px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer {
-    min-height: 768px;
-  }
-}
-
-@media (width < 768px) {
-  .footer {
-    min-height: 668px;
-  }
 }
 
 .footer__title {
