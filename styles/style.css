@@ -34,6 +34,7 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  height: 100vh;
   min-height: 668px;
   padding: 0 20px;
 }
@@ -429,6 +430,7 @@ html, body {
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   min-height: 668px;
   padding: 0 20px;
   text-align: center;
@@ -450,7 +452,6 @@ html, body {
     min-height: 668px;
   }
 }
-
 
 .footer__title {
   color: var(--title-color);
