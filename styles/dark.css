@@ -1,33 +1,59 @@
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-text-color: #f1b2ce;
-    --title-color: #db00ff;
-    --title-shadow: #ff0070;
-    --hover-color: 1px solid rgba(255, 0, 112, 0.4);
-    --background-color: #000028;
-    --background-image: url(../images/cover-image-dark.png);
-    --article-title-color: var(--background-color);
-    --section-title-color: var(--title-shadow);
-    --border-color: var(--main-text-color);
-    --corners-color: var(--title-shadow);
-    --title-decor: var(--title-shadow);
-    --link-shadow: var(--title-shadow);
-    --rec-color: var(--title-shadow);
-  }
+.theme-dark {
+  --page-bg-color: var(--approximately-black);
+  --accent-color: var(--real-red);
+  --title-color: #DB00FF;
+  --header-text-bg-color: var(--real-red);
+  --header-text-color: var(--approximately-black);
+  --question-bg-color: var(--approximately-black);
+  --question-color: var(--real-red);
+  --answer-title-bg-color: var(--real-red);
+  --answer-title-color: var(--approximately-black);
+  --answer-text-bg-color: var(--approximately-black);
+  --answer-text-color: #F1B2CE;
+  --advice-title-bg-color: var(--real-red);
+  --advice-title-color: var(--approximately-black);
+  --button-color: var(--real-red);
+  --rec-color: var(--real-red);
+  --border-color-opacity: #FF007066;
+  --background-image: url("../images/cover-image-dark.png");
+  --deco-color: var(--real-red);
 }
 
-.page.theme_dark {
-  --main-text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --title-shadow: #ff0070;
-  --hover-color: 1px solid rgba(255, 0, 112, 0.4);
-  --background-color: #000028;
-  --background-image: url(../images/cover-image-dark.png);
-  --article-title-color: var(--background-color);
-  --section-title-color: var(--title-shadow);
-  --border-color: var(--main-text-color);
-  --corners-color: var(--title-shadow);
-  --title-decor: var(--title-shadow);
-  --link-shadow: var(--title-shadow);
-  --rec-color: var(--title-shadow);
+.theme-dark .rec__empty::before {
+  display: inline-block;
+}
+
+.theme-dark .rec__empty::after {
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light) {
+    --page-bg-color: var(--approximately-black);
+    --accent-color: var(--real-red);
+    --title-color: #DB00FF;
+    --header-text-bg-color: var(--real-red);
+    --header-text-color: var(--approximately-black);
+    --question-bg-color: var(--approximately-black);
+    --question-color: var(--real-red);
+    --answer-title-bg-color: var(--real-red);
+    --answer-title-color: var(--approximately-black);
+    --answer-text-bg-color: var(--approximately-black);
+    --answer-text-color: #F1B2CE;
+    --advice-title-bg-color: var(--real-red);
+    --advice-title-color: var(--approximately-black);
+    --button-color: var(--real-red);
+    --rec-color: var(--real-red);
+    --border-color-opacity: #FF007066;
+    --background-image: url("../images/cover-image-dark.png");
+    --deco-color: var(--real-red);
+  }
+  
+  :root:not(.theme-light) .rec__empty::before {
+    display: inline-block;
+  }
+  
+  :root:not(.theme-light) .rec__empty::after {
+    display: inline-block;
+  }
 }

@@ -1,16 +1,38 @@
 :root {
-  --font-family: "IBM Plex mono";
-  --main-text-color: #f1b2ce;
-    --title-color: #db00ff;
-    --title-shadow: #ff0070;
-    --hover-color: 1px solid rgba(255, 0, 112, 0.4);
-    --background-color: #000028;
-    --background-image: url(../images/cover-image-dark.png);
-    --article-title-color: var(--background-color);
-    --section-title-color: var(--title-shadow);
-    --border-color: var(--main-text-color);
-    --corners-color: var(--title-shadow);
-    --title-decor: var(--title-shadow);
-    --link-shadow: var(--title-shadow);
-    --rec-color: var(--title-shadow);
+  --basic-pink: #FF8DCB;
+  --title-pink: #FFC2E6;
+  --almost-white-bg: #FFF1F7;
+  --real-red: #FF0070;
+  --approximately-black: #000028;
+  --almost-black: #353430;
+
+  --page-bg-color: var(--almost-white-bg);
+  --accent-color: var(--basic-pink);
+  --title-color: var(--title-pink);
+  --header-text-bg-color: var(--basic-pink);
+  --header-text-color: var(--almost-black);
+  --question-bg-color: var(--almost-white-bg);
+  --question-color: var(--almost-black);
+  --answer-title-bg-color: var(--basic-pink);
+  --answer-title-color: var(--almost-black);
+  --answer-text-bg-color: var(--almost-white-bg);
+  --answer-text-color: var(--almost-black);
+  --advice-title-bg-color: var(--basic-pink);
+  --advice-title-color: var(--almost-black);
+  --button-color: var(--almost-black);
+  --rec-color: var(--real-red);
+  --border-color-opacity: #32312D66;
+  --background-image: url("../images/cover-image-light.png");
+  --deco-color: var(--almost-black);
+
+  --regular-font-size: 18px;
+  --regular-line-height: 100%;
+  --regular-gap: 10px;
+  --decoration-gap: clamp(10px, 2.65vw, 20px);
+  --min-height: 668px;
+  --header-margin-left: min(10px, 20px - 2.6vw);
+  --section-child-margin: 40px;
+  --project-font-family: "IBM Plex Mono", "Arial", sans-serif;
+  --corner-thickness: 1px;
+  --rec_empty_x_pos: 30px;
 }

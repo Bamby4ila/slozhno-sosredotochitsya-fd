@@ -1,55 +1,57 @@
-.page.theme_light {
-  --main-text-color: #353430;
-  --title-color: #ffc2e6;
-  --footer-title-shadow: #ff0070;
-  --title-shadow: #ff8dcb;
-  --title-decor: #ff8dcb;
-  --hover-color: 1px solid rgba(50, 49, 45, 0.4);
-  --background-color: #fff1f7;
-  --background-image: url(../images/cover-image-light.png);
-  --article-title-color: var(--main-text-color);
-  --section-title-color: var(--main-text-color);
-  --border-color: var(--main-text-color);
-  --corners-color: var(--main-text-color);
-  --link-shadow: var(--title-color);
-  --rec-color: var(--background-color);
+.theme-light {
+  --accent-color: var(--basic-pink);
+  --title-color: #FFC2E6;
+  --page-bg-color: var(--almost-white-bg);
+  --header-text-bg-color: var(--basic-pink);
+  --header-text-color: var(--almost-black);
+  --question-bg-color: var(--almost-white-bg);
+  --question-color: var(--almost-black);
+  --answer-title-bg-color: var(--basic-pink);
+  --answer-title-color: var(--almost-black);
+  --answer-text-bg-color: var(--almost-white-bg);
+  --answer-text-color: var(--almost-black);
+  --advice-title-bg-color: var(--basic-pink);
+  --advice-title-color: var(--almost-black);
+  --button-color: var(--almost-black);
+  --border-color-opacity: #32312D66;
+  --background-image: url("../images/cover-image-light.png");
+  --deco-color: var(--almost-black);
 }
 
-.page.theme_light .header__rec {
+.theme-light .rec__empty::before {
   display: none;
 }
 
-.page.theme_light .header__theme-menu-button:hover {
-  border: var(--hover-color);
-}
-
-.page.theme_light .header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--corners-color);
-}
-
-.page.theme_light .section__article-text-link:focus-visible {
-  outline: 1px solid var(--main-text-color);
+.theme-light .rec__empty::after {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    --main-text-color: #353430;
-    --title-color: #ffc2e6;
-    --title-shadow: #ff8dcb;
-    --title-decor: #ff8dcb;
-    --hover-color: 1px solid rgba(50, 49, 45, 0.4);
-    --background-color: #fff1f7;
-    --background-image: url(../images/cover-image-light.png);
-    --article-title-color: var(--main-text-color);
-    --section-title-color: var(--main-text-color);
-    --border-color: var(--main-text-color);
-    --corners-color: var(--main-text-color);
-    --link-shadow: var(--title-color);
-    --rec-color: var(--background-color);
-    --footer-title-shadow: var(--title-shadow);
+  :root:not(.theme-dark) {
+    --accent-color: var(--basic-pink);
+    --title-color: #FFC2E6;
+    --page-bg-color: var(--almost-white-bg);
+    --header-text-bg-color: var(--basic-pink);
+    --header-text-color: var(--almost-black);
+    --question-bg-color: var(--almost-white-bg);
+    --question-color: var(--almost-black);
+    --answer-title-bg-color: var(--basic-pink);
+    --answer-title-color: var(--almost-black);
+    --answer-text-bg-color: var(--almost-white-bg);
+    --answer-text-color: var(--almost-black);
+    --advice-title-bg-color: var(--basic-pink);
+    --advice-title-color: var(--almost-black);
+    --button-color: var(--almost-black);
+    --border-color-opacity: #32312D66;
+    --background-image: url("../images/cover-image-light.png");
+    --deco-color: var(--almost-black);
   }
-  
-  .header__rec {
+
+  :root:not(.theme-dark) .rec__empty::before {
+    display: none;
+  }
+
+  :root:not(.theme-dark) .rec__empty::after {
     display: none;
   }
 }
