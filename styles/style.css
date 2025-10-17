@@ -487,10 +487,8 @@
     margin-top: 40px;
   }
 
-  .question__why {
-    margin-top: 20px;
-  }
-
+  /* УДАЛЕНО: .question__why { margin-top: 20px; } - этот селектор дублируется */
+  
   .answers__why {
     margin-top: 0;
   }
@@ -513,11 +511,6 @@
 
   .header__theme-menu-list {
     grid-auto-flow: column;
-  }
-
-  .title {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
   }
 
   .section__what {
