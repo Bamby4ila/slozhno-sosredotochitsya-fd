@@ -487,8 +487,6 @@
     margin-top: 40px;
   }
 
-  /* УДАЛЕНО: .question__why { margin-top: 20px; } - этот селектор дублируется */
-  
   .answers__why {
     margin-top: 0;
   }
