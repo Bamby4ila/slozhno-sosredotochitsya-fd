@@ -404,6 +404,7 @@
   }
 }
 
+/* Объединяем дублирующиеся медиа-запросы для .answer и .advice__title */
 @media (min-width: 375px), (min-width: 768px) {
   .answer {
     margin-top: 0;
