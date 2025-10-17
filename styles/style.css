@@ -287,40 +287,7 @@
   .main {
     padding-bottom: 40px;
   }
-}
-
-@media (min-width: 768px) {
-  .main {
-    padding-bottom: 60px;
-  }
-}
-
-@media (min-width: 375px), (min-width: 768px) {
-  .answer {
-    margin-top: 0;
-    padding-top: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .answer {
-    padding-top: 0;
-  }
-}
-
-@media (min-width: 375px), (min-width: 768px) {
-  .advice__title {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .advice__title {
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 375px) {
+  
   .huge__title {
     margin-left: var(--header-margin-left);
   }
@@ -332,6 +299,10 @@
 }
 
 @media (min-width: 768px) {
+  .main {
+    padding-bottom: 60px;
+  }
+  
   .question {
     padding-top: 20px;
   }
@@ -430,11 +401,29 @@
   
   .footer__title {
     justify-content: center;
+  }
+}
+
+@media (min-width: 375px), (min-width: 768px) {
+  .answer {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  
+  .advice__title {
     margin-top: 0;
   }
 }
 
 @media (min-width: 1024px) {
+  .answer {
+    padding-top: 0;
+  }
+  
+  .advice__title {
+    margin-top: 20px;
+  }
+  
   .section__why .question__why {
     margin-top: 0;
   }
