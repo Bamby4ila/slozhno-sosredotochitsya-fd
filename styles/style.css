@@ -310,11 +310,6 @@
 @media (min-width: 375px), (min-width: 768px) {
   .answer {
     padding-top: 20px;
-  }
-}
-
-@media (min-width: 375px) {
-  .answer {
     margin-top: 0;
   }
 }
